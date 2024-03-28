@@ -1,0 +1,104 @@
+<!-- Estructura Basica de Una Pagina Web HTML5 -->
+<!DOCTYPE html> <!-- Es una directriz -->
+<!-- Es nuestra estructura en si -->
+<html lang="es">
+  <!-- Es nuestra donde colocaremos nuestros metadatos -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Esta etiqueta nos permite poner estilos a nuestro html -->
+    <style>
+      /* Clases */
+      .encabezado {
+        text-align: center;
+      }
+
+      .item-1 {
+        background-color: #000;
+      }
+
+      /* Id's */
+      #navbar {
+        margin: 0px auto;
+        height: 100px;
+        width: 150px;
+        text-align: center;
+      }
+
+      #menu {
+        height: 100px;
+        width: 150px;
+        list-style: none;
+        padding: 0;
+      }
+
+      /* Jerarquias */
+      .item-1 a {
+        color: #fff;
+        text-decoration: none;
+      }
+      
+      li {
+        padding: 5px 0px;
+      }
+
+      a {
+        color: #000;
+        text-decoration: none;
+        padding: 5px 10px;
+      }
+
+      main {
+        margin: 0px auto;
+        height: auto;
+        width: 300px;
+      }
+
+      h2 {
+        color: blueviolet;
+      }
+
+      p {
+        text-wrap: pretty;
+      }
+
+      footer {
+        background: linear-gradient(to right, pink, blue);
+        text-align: center;
+        color: #fff;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header class="encabezado">
+      <h1>MI BLOG</h1>
+    </header>
+    <nav id="navbar">
+      <ul id="menu">
+        <li class="item-1"><a href="">Link 1</a></li>
+        <li><a href="">Link 2</a></li>
+        <li><a href="">Link 3</a></li>
+        <li><a href="">Link 4</a></li>
+      </ul>
+    </nav>
+    <main>
+      <article>
+        <h2>Noticias Calientes 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam odit dolore quasi harum ipsum quae nobis in neque doloremque minus porro consequuntur omnis sit qui non, voluptatem nostrum debitis nisi?</p>
+      </article>
+      <article>
+        <h2>Noticias Calientes 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam odit dolore quasi harum ipsum quae nobis in neque doloremque minus porro consequuntur omnis sit qui non, voluptatem nostrum debitis nisi?</p>
+      </article>
+      <article>
+        <h2>Noticias Calientes 3</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam odit dolore quasi harum ipsum quae nobis in neque doloremque minus porro consequuntur omnis sit qui non, voluptatem nostrum debitis nisi?</p>
+      </article>
+    </main>
+    <footer>
+      <span>Copyright &copy Por Nosotros.</span>
+    </footer>
+  </body>
+</html>
