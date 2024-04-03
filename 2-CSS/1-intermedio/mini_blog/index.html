@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Mini Blog</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Es un mini blog de noticias sobre tecnologia y programación."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/favicon/Logo.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/styles/index.css" />
+  </head>
+  <body>
+    <!-- BEM -->
+    <!-- * Block -->
+    <!-- * Element -->
+    <!-- * Modify -->
+    <!-- Nuestro encabezado -->
+    <header class="navbar">
+      <!-- Logo de nuestro Mini Blog -->
+      <img
+        class="navbar__logo"
+        src="./assets/logo/Logo.png"
+        alt="Logo de nuestro mini blog"
+      />
+      <nav class="navbar__menu">
+        <ul class="menu__lista">
+          <li class="lista__link">
+            <a href="" class="link link--active">Home</a>
+          </li>
+          <li class="lista__link">
+            <a href="" class="link">Noticias de Programación</a>
+          </li>
+          <li class="lista__link">
+            <a href="" class="link">Noticias de Tecnologia</a>
+          </li>
+          <li class="lista__link">
+            <a href="" class="link link--button">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Section Hero -->
+    <section class="container container--hero">
+      <div class="container__noticia">
+        <img
+          class="noticia__imagen"
+          src="./assets/webp/noticia-devin.webp"
+          alt="Es una noticias caliente"
+        />
+        <section class="noticia__datos">
+          <h1>¿Sabia que una IA llamada DEVIN nos puede reemplazar?</h1>
+          <p>
+            Se acaba de crear una inteligencia artificial que es un asistente
+            para los ingeniero de software.
+          </p>
+          <a href="">Conoce más →</a>
+        </section>
+      </div>
+      <div class="container__tendencia">
+        <h2>TENDENCIAS EN TECNOLOGIA</h2>
+        <div class="tendencia__noticia">
+          <img
+            src="./assets/jpg/tendencias/tendencia_apple.jpg"
+            alt="Noticia sobre Apple"
+          />
+          <p>La Comisión Europea investiga si Apple, Alphabet y Meta</p>
+          <a
+            href="https://www.eitb.eus/es/noticias/internacional/detalle/9456141/la-comision-europea-investiga-si-apple-alphabet-y-meta-cumple-nueva-ley-antimonopolio-de-ue/"
+            >ver más →</a
+          >
+        </div>
+        <div class="tendencia__noticia">
+          <img
+            src="./assets/jpg/tendencias/tendencia_ordenador_cuantico.jpg"
+            alt="Noticia sobre Ordenador Cuantico"
+          />
+          <p>El superordenador cuántico de IBM estará instalado</p>
+          <a
+            href="https://www.eitb.eus/es/noticias/tecnologia/detalle/9325248/el-superordenador-cuantico-de-ibm-estara-instalado-en-san-sebastian-en-2025/"
+            >ver más →</a
+          >
+        </div>
+        <div class="tendencia__noticia">
+          <img
+            src="./assets/jpg/tendencias/tendencia_superordenador.jpg"
+            alt="Noticia sobre HPC"
+          />
+          <p>
+            El superordenador 'Hyperion' sitúa en el Olimpo de la
+            supercomputación
+          </p>
+          <a
+            href="https://www.eitb.eus/es/noticias/tecnologia/videos/detalle/9427625/video-el-superordenador-hyperion-situa-a-euskadi-en-olimpo-de-supercomputacion/"
+            >ver más →</a
+          >
+        </div>
+        <div class="tendencia__noticia">
+          <img
+            src="./assets/jpg/tendencias/tendencia_telecomunicaciones.jpg"
+            alt="Noticia sobre Telecomunicaciones."
+          />
+          <p>Operadoras de telecomunicaciones no bloquean a Telegram</p>
+          <a
+            href="https://www.eitb.eus/es/noticias/tecnologia/detalle/9455723/las-operadoras-de-telecomunicaciones-no-han-recibido-aun-orden-de-bloquear-telegram/"
+            >ver más →</a
+          >
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

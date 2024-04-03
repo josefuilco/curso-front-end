@@ -1,0 +1,231 @@
+/* Inicio del RESET */
+html,
+body {
+  margin: 0; /* Margen */
+  padding: 0; /* El espacio que tenemos en el contenedor */
+  box-sizing: border-box; /* Tamaño de la caja */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem; /* Tamaño de Fuente */ /* rem → Primer tamaño que se encuentra en nuestra web */
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none; /* Estilo de las listas */
+}
+
+a {
+  text-decoration: none; /* Decoración del texto */
+  color: black;
+}
+/* Final del RESET */
+
+/* Estilos de la Pagina */
+:root {
+  /* Colores */
+  --color-principal: #7aa2e3;
+  --color-secundario: #6ad4dd;
+  --color-terciario: #97e7e1;
+  --color-terciario-2: #5c8f8b;
+  --color-terciario-3: #46706d;
+  --color-cuaternario: #f8f6e3;
+  --color-black: #000;
+  --color-black-inactive: #717171;
+  /* Margen */
+  --margin-std: 130px;
+  --margin-top: 70px;
+  /* Gap */
+  --gap-navbar: 100px;
+  /* Alturas */
+  --altura-noticia: 186px;
+  /* Tamaño de letra */
+  --size-h1: 26px;
+}
+
+.navbar,
+.menu__lista,
+.container,
+.container__noticia,
+.noticia__datos,
+.container__tendencia,
+.tendencia__noticia {
+  display: flex; /* Volver flexible a nuestro bloque */
+}
+
+.navbar {
+  position: relative; /* Va a tomar como referencia el bloque en el que esta */
+  height: 80px;
+  width: 100%;
+  justify-content: space-between; /* Justificación de contenido */
+  align-items: flex-end; /* Alineacion del bloque */
+}
+
+.navbar__logo {
+  height: 60px;
+  width: auto;
+  margin-left: var(--margin-std);
+}
+
+.navbar__menu {
+  margin-right: var(--margin-std);
+}
+
+.menu__lista {
+  gap: var(--gap-navbar); /* Es un espacio */
+  margin-bottom: 4px;
+}
+
+.link {
+  color: var(--color-black-inactive);
+  transition: color 0.5s linear;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.link--active {
+  color: var(--color-black);
+}
+
+.link--button {
+  color: var(--color-black-inactive);
+  padding: 4px 10px;
+  border: 1px solid var(--color-black-inactive); /* (tamaño) (solid) (color → hex, rgb, rgba) */
+  border-radius: 4px; /* Es agregarle radio a nuestro bloque */
+  transition: color 0.5s linear, background-color 0.5s linear;
+}
+
+.link:hover {
+  color: var(--color-black);
+}
+
+.link--button:hover {
+  color: white;
+  background-color: var(--color-black);
+}
+
+/* Hero Section */
+.container {
+  margin-top: var(--margin-top);
+}
+
+.container--hero {
+  justify-content: space-between;
+}
+
+.container__noticia {
+  flex-direction: column; /* Determina la direccion de nuestro bloque */
+  position: relative;
+  height: 539px;
+  width: 744px;
+  margin-left: var(--margin-std);
+}
+
+.noticia__imagen {
+  align-self: flex-end;
+  position: relative;
+  height: auto;
+  width: 686px;
+}
+
+.noticia__datos {
+  margin-top: -119px;
+  background-color: white;
+  flex-direction: column;
+  justify-content: center;
+  height: var(--altura-noticia);
+  width: 515px;
+  z-index: 1; /* La posición por elemento → */
+  gap: 20px;
+  filter: drop-shadow(2px 2px 5px gray);
+}
+
+.noticia__datos::before {
+  position: absolute;
+  content: "";
+  height: var(--altura-noticia);
+  width: 6px;
+  background-color: var(--color-terciario-2);
+}
+
+.noticia__datos :is(h1, p, a) {
+  height: auto;
+  width: 468px;
+  margin-left: 22px;
+}
+
+.noticia__datos h1 {
+  font-size: var(--size-h1);
+}
+
+.noticia__datos p {
+  font-size: 18px;
+}
+
+.noticia__datos a {
+  color: var(--color-terciario-);
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.container__tendencia {
+  flex-direction: column;
+  align-items: center;
+  height: 539px;
+  width: 346px;
+  margin-right: var(--margin-std);
+  background-color: var(--color-terciario);
+  gap: 20px;
+}
+
+.container__tendencia :is(h2, .tendencia__noticia) {
+  height: auto;
+  width: 278px;
+}
+
+.container__tendencia h2 {
+  margin-top: 30px;
+  font-size: var(--size-h1);
+  color: var(--color-terciario-3);
+}
+
+.tendencia__noticia {
+  position: relative;
+  gap: 5px;
+}
+
+.tendencia__noticia img {
+  height: 80px;
+  width: 80px;
+}
+
+.tendencia__noticia a {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-weight: bold;
+}
+
+@media (max-width: 1200px) {
+  :root {
+    --margin-std: 60px;
+    --gap-navbar: 70px;
+  }
+}
+
+@media (max-width: 970px) {
+  :root {
+    --margin-std: 30px;
+    --gap-navbar: 30px;
+  }
+}
